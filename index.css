@@ -1,0 +1,232 @@
+body {
+  background-color: #E8D2C0;
+  height: 800px;
+}
+
+h1{
+  display: inline;
+}
+
+
+h2 {
+  font-size: 30px ;
+  padding: 50px 0px 0px 0px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 31px;
+ display: inline;
+  float: left;
+  width: 30%;
+
+}
+
+#welcome {
+   padding: 10px 0px -30px 0px;
+   margin-top: -30px;
+   margin-bottom: 0px;
+   text-indent: 50px;
+   font-family: 'times new roman';
+   margin-bottom: 60px;
+   color: #524339;
+   font-size: 19px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+#hobbies {
+  padding: 0px 10px -30px 10px;
+  text-align: center; /* Center the content */
+}
+
+#hobbies h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#hobbies p {
+  margin-top: 0px;
+  margin-top: 0; /* Remove default top margin on the paragraph */
+
+}
+
+#hobbies ul {
+  list-style-type: none; /* Use disc as the bullet point style */
+  padding: 10px;
+  text-align: center;
+}
+
+#hobbies li {
+  margin-bottom: 7px; /* Add vertical space between list items */
+  font-size: 18.5px;
+}
+
+#hobbies li::before {
+  content: '•'; /* Use a disc as the bullet point character */
+  margin-right: 10px; /* Adjust the spacing between the bullet point and text */
+}
+
+
+
+#sidenav {
+   padding: 50px 50px 0px 100px;
+   margin-bottom: 50px;
+   color: #524339;
+   font-size: 30px;
+   float: left;
+}
+
+#nav{
+  padding: 10px;
+  border: 3px solid #877567;
+  margin-top: -40px;
+  color: #6F635B;
+  font-size: 22px;
+  background-color: #F0C9B1;
+
+}
+
+a{
+  font-size: 24px;
+  margin-left: 9%;
+  text-decoration: none;
+}
+
+
+
+#footer {
+  float: left;
+  display: block;
+}
+
+#header{
+  display: block;
+}
+
+
+#title{
+  padding: 20px 0 20px 20px;
+  text-decoration: underline;
+  font-family: 'fantacy', cursive;
+  margin-bottom: 50px;
+  color: #524339;
+  text-align: center;
+  font-size: 30px;
+}
+
+#icon{
+  float: right;
+  margin-right: 50px;
+}
+
+#welcometitle{
+  padding: -50px 10px 10px 10px;
+  text-decoration: 1 px underline;
+  font-family: 'fantacy', cursive;
+  margin-bottom: -15px;
+  color: #524339;
+  text-align: center;
+  font-size: 20px;
+}
+
+#hobbiestitle{
+  padding: 0px 0px -40px;
+  font-family: 'fantacy', cursive;
+  font-size: 20px;
+  color: #524339;
+  margin-bottom: -15px;
+  margin-top: -110px;
+
+}
+
+.social-menu {
+  display: flex;
+  justify-content: center;
+}
+.social-btn {
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  margin: 15px;
+  border-radius: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 10px -5px rgb(255,255,255,0.1);
+  transition: all 0.3s;
+  z-index: 10px;
+}
+.social-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.social-btn:hover a {
+  color: #fff;
+}
+.social-menu .social-btn::before {
+  content: attr(tooltip);
+  position: absolute;
+  top: 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: auto;
+  background: #fff;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+}
+.social-menu .social-btn::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  opacity: 0;
+  background: #fff;
+  transform: rotate(45deg);
+  left: 20%;
+  z-index: -2;
+  transition:
+    all 0.3s ease-out;
+}
+.social-menu .social-btn:hover::before {
+  top: -45px;
+  opacity: 1;
+}
+.social-btn:hover::after {
+  top: -12px;
+  opacity: 1;
+
+}
+
+.github a {
+  color: #c8232c;
+}
+.github:hover,
+.github:hover .social-btn:before,
+.github:hover .social-btn:after {
+  background: #100904;
+}
+.linkedin a {
+  color: #0072b1;
+}
+.linkedin:hover,
+.linkedin:hover .social-btn:before,
+.linkedin:hover .social-btn:after {
+  background: #0077b5;
+}
+
+.social-btn img {
+    width: 40px;
+    height: 40px;
+    display: block; /* Ensure the image is a block element */
+    margin: 0 auto;
+
+}
